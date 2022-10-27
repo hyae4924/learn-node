@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy</title>
+</head>
+
+<body>
+    <h1>welcome <%= name %>
+    </h1>
+</body>
+
+</html>
+<!-- 만약 응답으로 제공되는 문서가 정적인 html이라면
+클라이언트의 요청과 무관하게 고정된 html만을 제공받게될것이다
+Templating Engines를 이용하면 동적으로 변경 가능하게 해준다
+html의 뼈대에 자바스크립트를 녹일 수 있고 덕분에 ssr을 할 수 있다
+(물론 SSR을 위한 ejs의 사용이 작은 규모의 프로그램이라면 괜찮지만
+복잡하고 조금 더 큰 규모의 프로그램의 ssr구현에는
+리엑트와 next.js가 더 좋은 방법일 것이다)
+많은 종류의 Templating Engines가 있는데 대표적인 ejs를 살펴보자
+ -->
+<!-- 1. ejs 를 사용하기 위해서는 npm을통해 ejs를 추가해야함 -->
+<!-- 2.  문법은 간단함  각줄마다  <% %> 로감싸주고 자바스크립트를 넣을 수 있음-->
+<!-- 3. 값을 불러오는경우는 <% = 이렇게표시해줌 -->
