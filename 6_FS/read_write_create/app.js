@@ -28,3 +28,5 @@ fs.mkdir("sub-folder") //
 fs.readdir("./") //
   .then(console.log)
   .catch(console.error);
+
+// 파일 열기(open),닫기(close),정보(state),삭제(unlink,rmdir) 등등 다양한 api가있음

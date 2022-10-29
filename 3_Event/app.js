@@ -1,15 +1,16 @@
+// Many objects in a Node emit events,
+// All objects which emit events are the instances of events.EventEmitter.
+// EventEmitter 인스턴스에 오류가 발생하면 '오류' 이벤트가 발생합니다.
+// 새로운 리스너가 추가되면 'newListener' 이벤트가 발생하고,
+// 리스너가 제거되면 'removeListener' 이벤트가 발생합니다
+
+// EventEmitter 클래스는 이벤트 모듈에 있습니다.
 const EventEmitter = require("events");
 const emitter = new EventEmitter();
 
 const callback1 = args => {
   console.log("first callback: ", args);
 };
-
-// emit
-// : Synchronously calls each of the listeners registered for the event namedeventName, in the order they were registered, passing the supplied arguments to each.
-// : 이벤트 사용자 정의가능
-// : 하나의 이름에 여러개 이벤트를 동기적으로 넣을 수 있음
-// : 호출시 모두 실행됨
 
 // 이벤트등록방방법
 emitter.on("emit", callback1);
