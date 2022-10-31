@@ -1,4 +1,4 @@
-// 시간이 많이드는 작업인 api는 3가지 형태로 제공된다
+// fs 모듈의 모든 메서드에는 동기 형식과 비동기 형식이 있습니다
 // 1. rename(...,callback(error,data))  : 비동기
 // 2. try{renameSync(...)} catch(error){}   : 동기
 // 3. promises.rename().then().cathch()  : promise 형태
