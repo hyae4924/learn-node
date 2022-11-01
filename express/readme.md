@@ -24,6 +24,11 @@ Following are some of the core features of Express framework −<br>
   미들웨어라함수는 특정 요구에대해 처리할 수있게,<br>
   말하자면 거쳐가는 함수들이라 생각하면 된다<br>
 - express의 method는 미들웨어를 방식으로 동작한다
+- express middleware의 유형
+  - 어플리케이션 레벨 미들웨어
+  - 라우터 레벨 미들웨어
+  - 오류처리 미들웨어
+  - 써드 파티 미들웨어
 
 2. <b>Routing </b><br>
 
@@ -41,5 +46,3 @@ Following are some of the core features of Express framework −<br>
 4. <b>Debugging </b>
    Express makes it easier <br>
    as it identifies the exact part where bugs are.
-
----
