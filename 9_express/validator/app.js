@@ -17,7 +17,10 @@ app.post(
       .isLength({ min: 2, max: 10 })
       .withMessage("이름은 2글자이상 10글자이하로"),
     body("age").isInt().withMessage("숫자입력해주세요"),
-    body("email").isEmail().withMessage("이메일 형식에 맞추세요"),
+    body("email")
+      .isEmail()
+      .withMessage("이메일 형식에 맞추세요")
+      .normalizeEmail(),
     body("job.name").notEmpty().withMessage("직장이름을 입력해"),
   ],
   validate,
